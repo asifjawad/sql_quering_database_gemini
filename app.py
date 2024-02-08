@@ -6,7 +6,7 @@ import os
 import sqlite3
 
 import google.generativeai as genai
-## Configure Genai Key
+## Configure Genai Key got from google
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
@@ -50,7 +50,7 @@ prompt=[
 ## Streamlit App
 
 st.set_page_config(page_title="I can Retrieve Any SQL query")
-st.header("Gemini App To Retrieve SQL Data")
+st.header("SQL Query using Gemini ")
 
 question=st.text_input("Input: ",key="input")
 
@@ -62,6 +62,6 @@ if submit:
     print(response)
     response=read_sql_query(response,"student.db")
     st.subheader("The REsponse is")
-    for row in response:
-        print(row)
-        st.header(row)
+    for rows in response:
+        print(rows)
+        st.header(rows)
