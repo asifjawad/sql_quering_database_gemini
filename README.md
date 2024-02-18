@@ -1,8 +1,8 @@
-#SQL Query using Gemini
+# SQL Query using Gemini
 
 This project demonstrates how to retrieve SQL queries using Google’s Gemini model. It allows users to input questions in English, and the model generates corresponding SQL queries. The queries are then executed on an SQLite database named student.db.
 
-##Installation
+## Installation
 Make sure you have Python installed.
 
 - Clone this repository.
